@@ -213,8 +213,7 @@ app/
 │   ├── Task.php
 │   └── User.php
 └── Traits/
-└── ApiResponseTrait.php
-
+    └── ApiResponseTrait.php
 ---
 
 ## 🔒 Security Features
