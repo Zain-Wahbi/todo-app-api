@@ -183,37 +183,38 @@ Tests: 31 passed (73 assertions)
 ---
 
 ## 📁 Project Structure
-app/
-├── Enums/
-│   ├── TaskPriority.php
-│   ├── TaskStatus.php
-│   └── UserRole.php
-├── Http/
-│   ├── Controllers/Api/V1/
-│   │   ├── Admin/
-│   │   │   ├── AdminDashboardController.php
-│   │   │   ├── AdminTaskController.php
-│   │   │   └── AdminUserController.php
-│   │   ├── AuthController.php
-│   │   ├── CategoryController.php
-│   │   ├── DashboardController.php
-│   │   └── TaskController.php
-│   ├── Middleware/
-│   │   └── AdminMiddleware.php
-│   ├── Requests/
-│   │   ├── Auth/
-│   │   ├── Category/
-│   │   └── Task/
-│   └── Resources/
-│       ├── CategoryResource.php
-│       ├── TaskResource.php
-│       └── UserResource.php
-├── Models/
-│   ├── Category.php
-│   ├── Task.php
-│   └── User.php
-└── Traits/
-    └── ApiResponseTrait.php
+
+- **app/**
+  - **Enums/**
+    - TaskPriority.php
+    - TaskStatus.php
+    - UserRole.php
+  - **Http/**
+    - Controllers/Api/V1/
+      - Admin/
+        - AdminDashboardController.php
+        - AdminTaskController.php
+        - AdminUserController.php
+      - AuthController.php
+      - CategoryController.php
+      - DashboardController.php
+      - TaskController.php
+    - Middleware/
+      - AdminMiddleware.php
+    - Requests/
+      - Auth/
+      - Category/
+      - Task/
+    - Resources/
+      - CategoryResource.php
+      - TaskResource.php
+      - UserResource.php
+  - **Models/**
+    - Category.php
+    - Task.php
+    - User.php
+  - **Traits/**
+    - ApiResponseTrait.php
 ---
 
 ## 🔒 Security Features
