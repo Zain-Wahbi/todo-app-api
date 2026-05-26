@@ -1,4 +1,4 @@
-# 📋 Todo App API
+#  Todo App API
 
 A RESTful API for task management built with Laravel 11 and Sanctum.
 
@@ -9,21 +9,21 @@ A RESTful API for task management built with Laravel 11 and Sanctum.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 Token-based authentication via Laravel Sanctum
-- ✅ Full Task management (CRUD)
-- 🗂️ Category management
-- 📊 Dashboard statistics with caching
-- 👑 Admin panel for user & task management
-- 🔍 Filtering & search
-- 🛡️ Rate limiting
-- 📝 Logging
-- 🧪 31 automated tests
+-  Token-based authentication via Laravel Sanctum
+-  Full Task management (CRUD)
+-  Category management
+-  Dashboard statistics with caching
+-  Admin panel for user & task management
+-  Filtering & search
+-  Rate limiting
+-  Logging
+-  31 automated tests
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -35,7 +35,7 @@ A RESTful API for task management built with Laravel 11 and Sanctum.
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Clone the repository
 ```bash
@@ -77,7 +77,7 @@ php artisan serve
 
 ---
 
-## 👤 Default Accounts
+##  Default Accounts
 
 | Role | Email | Password |
 |---|---|---|
@@ -87,12 +87,12 @@ php artisan serve
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Base URL  
 http://localhost:8000/api/v1
 
-### 🔐 Auth
+###  Auth
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
 | POST | `/auth/register` | No | Register new user |
@@ -100,7 +100,7 @@ http://localhost:8000/api/v1
 | POST | `/auth/logout` | Yes | Logout |
 | GET | `/auth/me` | Yes | Get current user |
 
-### ✅ Tasks
+###  Tasks
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
 | GET | `/tasks` | Yes | Get all tasks |
@@ -110,14 +110,14 @@ http://localhost:8000/api/v1
 | DELETE | `/tasks/{id}` | Yes | Delete task |
 | PATCH | `/tasks/{id}/complete` | Yes | Mark as complete |
 
-### 🔍 Task Filters
+###  Task Filters
 GET /api/v1/tasks?status=pending
 GET /api/v1/tasks?priority=high
 GET /api/v1/tasks?category_id=1
 GET /api/v1/tasks?search=meeting
 GET /api/v1/tasks?overdue=true
 
-### 🗂️ Categories
+###  Categories
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
 | GET | `/categories` | Yes | Get all categories |
@@ -126,12 +126,12 @@ GET /api/v1/tasks?overdue=true
 | PUT | `/categories/{id}` | Yes | Update category |
 | DELETE | `/categories/{id}` | Yes | Delete category |
 
-### 📊 Dashboard
+###  Dashboard
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
 | GET | `/dashboard` | Yes | Get statistics |
 
-### 👑 Admin
+###  Admin
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
 | GET | `/admin/dashboard` | Admin | Admin statistics |
@@ -145,7 +145,7 @@ GET /api/v1/tasks?overdue=true
 
 ---
 
-## 📊 API Response Format
+##  API Response Format
 
 ### Success
 ```json
@@ -171,7 +171,7 @@ GET /api/v1/tasks?overdue=true
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 php artisan test
@@ -182,7 +182,7 @@ Tests: 31 passed (73 assertions)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 - **app/**
   - **Enums/**
@@ -217,7 +217,7 @@ Tests: 31 passed (73 assertions)
     - ApiResponseTrait.php
 ---
 
-## 🔒 Security Features
+##  Security Features
 
 - Token-based auth via Sanctum
 - Rate limiting (5 req/min for auth, 60 req/min for API)
@@ -227,11 +227,11 @@ Tests: 31 passed (73 assertions)
 
 ---
 
-## 📄 License
+##  License
 
 MIT License
 
-## 🌐 Live Demo
+##  Live Demo
 
 Base URL:
 https://todo-app-api-production-6c73.up.railway.app/api/v1
